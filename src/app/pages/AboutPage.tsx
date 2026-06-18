@@ -7,13 +7,13 @@ import { PageTransition } from "../components/shared/PageTransition";
 import { CTASection } from "../components/home/CTASection";
 
 const timeline = [
-  { year: "2018", title: "Agency Founded", description: "Alex Morgan founded WebMarkio in San Francisco with a mission to make enterprise-quality digital experiences accessible to ambitious businesses of all sizes." },
-  { year: "2019", title: "First 10 Clients", description: "Grew from 0 to 10 clients in our first year, with an NPS of 82. Word-of-mouth referrals became our primary growth engine." },
-  { year: "2020", title: "Team Expansion", description: "Hired our Creative Director and Head of Growth, building the core team that would define WebMarkio's culture and quality standards." },
-  { year: "2021", title: "100th Project Milestone", description: "Celebrated our 100th successful project launch—a healthcare platform serving 500,000 patients across 5 states." },
-  { year: "2022", title: "Marketing Services Launch", description: "Expanded beyond web development into paid media and SEO, enabling us to drive complete digital growth for our clients." },
-  { year: "2023", title: "$50M Revenue Generated", description: "Our clients collectively generated $50M+ in attributable revenue from WebMarkio projects—a milestone we're incredibly proud of." },
-  { year: "2024", title: "200+ Projects Delivered", description: "Reached 200+ successful project deliveries with a team of 18 specialists across design, development, and marketing." },
+  { year: "2024", title: "Agency Founded", description: "Started the agency with a vision to help businesses build modern websites and grow their online presence." },
+  { year: "2024", title: "First Clients", description: "Successfully completed our first client projects and built long-term relationships through quality work." },
+  { year: "2025", title: "Team Growth", description: "Expanded our team with skilled designers, developers, and digital marketing professionals." },
+  { year: "2025", title: "Service Expansion", description: "Successfully delivered over 50 projects across multiple industries with a strong focus on client satisfaction." },
+  { year: "2026", title: "Marketing Services Launch", description: "Expanded our services to include web development, UI/UX design, SEO, social media marketing, and branding." },
+  { year: "2026", title: "Growing Together", description: "Continuing to help businesses grow through innovative digital solutions while building lasting partnerships." },
+  // { year: "2024", title: "200+ Projects Delivered", description: "Reached 200+ successful project deliveries with a team of 18 specialists across design, development, and marketing." },
 ];
 
 const values = [
@@ -94,7 +94,7 @@ export function AboutPage() {
       {/* Timeline */}
       <section className="py-24 bg-white dark:bg-[#0F172A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Our Journey" title="Built Over 7 Years of Commitment" subtitle="From a two-person team in 2018 to an 18-person agency trusted by companies worldwide." />
+          <SectionHeading badge="Our Journey" title="Built Over 2 Years of Commitment" subtitle="From a two-person team in 2024 to an 20-person agency trusted by companies worldwide." />
           <div className="relative space-y-8">
             <div className="absolute left-16 top-0 bottom-0 w-0.5 bg-slate-100 dark:bg-white/5 hidden md:block" />
             {timeline.map((item, i) => (
