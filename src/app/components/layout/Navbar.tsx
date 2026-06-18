@@ -7,7 +7,7 @@ import {
   TrendingUp, Search, BarChart2, Sparkles, Layers, Building2, Moon, Sun
 } from "lucide-react";
 import { services } from "../../../data/services";
-
+import logoLight from "../../assets/logo.png";
 
 
 const serviceIcons: Record<string, React.ElementType> = {
@@ -86,7 +86,7 @@ export function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2.5 shrink-0">
             <div className="w-40">
-              <img src="src/app/assets/logo.png" alt="" />
+              <img src={logoLight} alt="Logo" />
             </div>
             </Link>
 
