@@ -4,8 +4,8 @@ import { AnimatedCounter } from "../shared/AnimatedCounter";
 const stats = [
   { value: 200, suffix: "+", label: "Projects Delivered", description: "Across 30+ industries" },
   { value: 98, suffix: "%", label: "Client Satisfaction", description: "Based on post-project surveys" },
-  { value: 50, suffix: "M+", label: "Revenue Generated", description: "For our clients combined", prefix: "$" },
-  { value: 7, suffix: "+", label: "Years of Excellence", description: "In digital craftsmanship" },
+  { value: 30, suffix: "M+", label: "Revenue Generated", description: "For our clients combined", prefix: "$" },
+  { value: 2, suffix: "+", label: "Years of Excellence", description: "In digital craftsmanship" },
 ];
 
 export function StatsSection() {

@@ -38,7 +38,7 @@ export function SectionHeading({ badge, title, subtitle, centered = true, light 
         transition={{ duration: 0.5, delay: 0.1 }}
         className={cn(
           "text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-4",
-          light ? "text-white" : "text-[#0F172A]",
+          light ? " text-white" : "text-[#0F172A] dark:text-white",
           "[font-family:'Plus_Jakarta_Sans',sans-serif]"
         )}
         style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
