@@ -38,7 +38,7 @@ export function CTASection() {
               Book Free Consultation <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/1346047100"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-all"
