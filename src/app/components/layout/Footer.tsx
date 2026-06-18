@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Globe, Mail, Phone, MapPin, Twitter, Linkedin, Instagram, Youtube, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import logoLight from "../../assets/logo.png";
 
 const footerLinks = {
   company: [
@@ -57,12 +58,9 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-8 h-8 bg-[#2563EB] rounded-lg flex items-center justify-center">
-                <Globe className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white [font-family:'Plus_Jakarta_Sans',sans-serif]">
-                Web<span className="text-[#2563EB]">Markio</span>
-              </span>
+              <div className="w-40">
+                           <img src={logoLight} alt="Logo" />
+                         </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xs">
               Premium digital agency building websites and marketing campaigns that drive real business growth. 200+ projects delivered.
@@ -70,15 +68,15 @@ export function Footer() {
             <div className="space-y-2.5 mb-6">
               <div className="flex items-center gap-2.5 text-sm text-slate-400">
                 <Mail className="w-4 h-4 text-[#2563EB] shrink-0" />
-                <a href="mailto:hello@webmarkio.com" className="hover:text-white transition-colors">hello@webmarkio.com</a>
+                <a href="mailto:contact.webmarkio@gmail.com" className="hover:text-white transition-colors">contact.webmarkio@gmail.com</a>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-slate-400">
                 <Phone className="w-4 h-4 text-[#2563EB] shrink-0" />
-                <a href="tel:+11234567890" className="hover:text-white transition-colors">+1 (123) 456-7890</a>
+                <a href="tel:+8801346047100" className="hover:text-white transition-colors">(+880)1346047100</a>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-slate-400">
                 <MapPin className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
-                <span>123 Digital Ave, San Francisco, CA 94105</span>
+                <span>Najimuddin Rd, Jigatala Rd, Dhanmondi, Dhaka</span>
               </div>
             </div>
             <div className="flex items-center gap-3">
