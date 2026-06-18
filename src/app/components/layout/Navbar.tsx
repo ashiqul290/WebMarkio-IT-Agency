@@ -8,6 +8,8 @@ import {
 } from "lucide-react";
 import { services } from "../../../data/services";
 
+
+
 const serviceIcons: Record<string, React.ElementType> = {
   Building2, Briefcase, Target, Palette, Zap, UtensilsCrossed,
   GraduationCap, Heart, ShoppingCart, TrendingUp, Search, BarChart2, Sparkles, Layers
@@ -83,12 +85,9 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-18">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2.5 shrink-0">
-              <div className="w-8 h-8 bg-[#2563EB] rounded-lg flex items-center justify-center">
-                <Globe className="w-5 h-5 text-white" />
-              </div>
-              <span className={`text-xl font-bold tracking-tight [font-family:'Plus_Jakarta_Sans',sans-serif] ${textColor}`}>
-                Web<span className="text-[#2563EB]">Markio</span>
-              </span>
+            <div className="w-40">
+              <img src="src/app/assets/logo.png" alt="" />
+            </div>
             </Link>
 
             {/* Desktop Nav */}
