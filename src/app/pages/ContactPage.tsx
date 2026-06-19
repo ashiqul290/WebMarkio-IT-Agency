@@ -17,6 +17,7 @@ export function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+    // console.log("Form submitted:", form);
   };
 
   return (
@@ -196,14 +197,16 @@ export function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div id="map" className="rounded-2xl overflow-hidden border border-slate-100 dark:border-white/5" style={{ height: "200px" }}>
-                <img
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=200&fit=crop&auto=format"
-                  alt="San Francisco Office"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+                {/* Map */}
+                    <div className="rounded-xl overflow-hidden border border-white/10 mt-20">
+                        <iframe
+                            title="map"
+                            src="https://www.google.com/maps?q=23.7371353,90.3714652&hl=en&z=16&output=embed"
+                            className="w-full h-50 border-0"
+                            loading="lazy"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
             </div>
           </div>
         </div>
