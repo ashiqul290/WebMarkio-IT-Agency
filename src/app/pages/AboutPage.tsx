@@ -94,7 +94,7 @@ export function AboutPage() {
       {/* Timeline */}
       <section className="py-24 bg-white dark:bg-[#0F172A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Our Journey" title="Built Over 2 Years of Commitment" subtitle="From a two-person team in 2024 to an 20-person agency trusted by companies worldwide." />
+          <SectionHeading badge="Our Journey" title="Built Over 3 Years of Commitment" subtitle="From a two-person team in 2024 to an 20-person agency trusted by companies worldwide." />
           <div className="relative space-y-8">
             <div className="absolute left-16 top-0 bottom-0 w-0.5 bg-slate-100 dark:bg-white/5 hidden md:block" />
             {timeline.map((item, i) => (

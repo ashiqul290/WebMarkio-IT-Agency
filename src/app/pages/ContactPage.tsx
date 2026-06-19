@@ -4,10 +4,10 @@ import { Mail, Phone, MapPin, MessageCircle, Clock, CheckCircle } from "lucide-r
 import { PageTransition } from "../components/shared/PageTransition";
 
 const contactMethods = [
-  { icon: Mail, label: "Email", value: "hello@webmarkio.com", href: "mailto:hello@webmarkio.com", description: "Response within 2 hours" },
-  { icon: Phone, label: "Phone", value: "+1 (123) 456-7890", href: "tel:+11234567890", description: "Mon–Fri, 9am–6pm EST" },
-  { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/1234567890", description: "Quick response guaranteed" },
-  { icon: MapPin, label: "Office", value: "123 Digital Ave, San Francisco", href: "#map", description: "By appointment only" },
+  { icon: Mail, label: "Email", value: "contact.webmarkio@gmail.com", href: "mailto:contact.webmarkio@gmail.com", description: "Response within 2 hours" },
+  { icon: Phone, label: "Phone", value: "+8801346047100", href: "tel:+8801346047100", description: "Any time" },
+  { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/1346047100", description: "Quick response guaranteed" },
+  // { icon: MapPin, label: "Office", value: "123 Digital Ave, San Francisco", href: "#map", description: "By appointment only" },
 ];
 
 export function ContactPage() {
@@ -68,7 +68,7 @@ export function ContactPage() {
                         value={form.name}
                         onChange={e => setForm({...form, name: e.target.value})}
                         required
-                        placeholder="John Smith"
+                        placeholder="Name..."
                         className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm text-[#1E293B] dark:text-white placeholder:text-slate-400 focus:outline-none focus:border-[#2563EB] transition-colors"
                       />
                     </div>
@@ -79,7 +79,7 @@ export function ContactPage() {
                         value={form.email}
                         onChange={e => setForm({...form, email: e.target.value})}
                         required
-                        placeholder="john@company.com"
+                        placeholder="your@gamil.com"
                         className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm text-[#1E293B] dark:text-white placeholder:text-slate-400 focus:outline-none focus:border-[#2563EB] transition-colors"
                       />
                     </div>
@@ -91,7 +91,7 @@ export function ContactPage() {
                         type="tel"
                         value={form.phone}
                         onChange={e => setForm({...form, phone: e.target.value})}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+880 1346 047100"
                         className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm text-[#1E293B] dark:text-white placeholder:text-slate-400 focus:outline-none focus:border-[#2563EB] transition-colors"
                       />
                     </div>
@@ -102,13 +102,13 @@ export function ContactPage() {
                         onChange={e => setForm({...form, service: e.target.value})}
                         className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm text-[#1E293B] dark:text-white focus:outline-none focus:border-[#2563EB] transition-colors"
                       >
-                        <option value="">Select a service</option>
-                        <option>Website Development</option>
-                        <option>Facebook Ads</option>
-                        <option>Google Ads</option>
-                        <option>SEO</option>
-                        <option>Branding</option>
-                        <option>Full Digital Package</option>
+                        <option value="" className="dark:text-black">Select a service</option>
+                        <option className="dark:text-black">Website Development</option>
+                        <option className="dark:text-black">Facebook Ads</option>
+                        <option className="dark:text-black">Google Ads</option>
+                        <option className="dark:text-black">SEO</option>
+                        <option className="dark:text-black">Branding</option>
+                        <option className="dark:text-black">Full Digital Package</option>
                       </select>
                     </div>
                   </div>
@@ -119,12 +119,12 @@ export function ContactPage() {
                       onChange={e => setForm({...form, budget: e.target.value})}
                       className="w-full px-4 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm text-[#1E293B] dark:text-white focus:outline-none focus:border-[#2563EB] transition-colors"
                     >
-                      <option value="">Select budget range</option>
-                      <option>Under $2,500</option>
-                      <option>$2,500 – $5,000</option>
-                      <option>$5,000 – $10,000</option>
-                      <option>$10,000 – $25,000</option>
-                      <option>$25,000+</option>
+                      <option value="" className="dark:text-black">Select budget range</option>
+                      <option className="dark:text-black">Under $2,500</option>
+                      <option className="dark:text-black">$2,500 – $5,000</option>
+                      <option className="dark:text-black">$5,000 – $10,000</option>
+                      <option className="dark:text-black">$10,000 – $25,000</option>
+                      <option className="dark:text-black">$25,000+</option>
                     </select>
                   </div>
                   <div>
