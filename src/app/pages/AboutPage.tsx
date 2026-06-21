@@ -36,7 +36,7 @@ export function AboutPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-[#0F172A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(37,99,235,0.12)_0%,transparent_60%)]" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
             <span className="inline-block px-4 py-1.5 bg-blue-500/10 text-blue-300 text-sm font-semibold rounded-full border border-blue-500/20 mb-5">Our Story</span>
             <h1 className="text-5xl md:text-6xl font-bold text-white [font-family:'Plus_Jakarta_Sans',sans-serif] leading-tight mb-6">
@@ -53,7 +53,7 @@ export function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="py-24 bg-white dark:bg-[#0F172A]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="p-8 bg-[#2563EB] rounded-2xl">
               <h2 className="text-2xl font-bold text-white [font-family:'Plus_Jakarta_Sans',sans-serif] mb-4">Our Mission</h2>
@@ -73,7 +73,7 @@ export function AboutPage() {
 
       {/* Achievements */}
       <section className="py-16 bg-slate-50 dark:bg-[#0A0F1E] border-y border-slate-100 dark:border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((a, i) => {
               const Icon = a.icon;
@@ -116,7 +116,7 @@ export function AboutPage() {
 
       {/* Team */}
       <section className="py-24 bg-slate-50 dark:bg-[#0A0F1E]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading badge="The Team" title="Meet the People Behind Your Success" subtitle="Our team of strategists, designers, developers, and marketers who work tirelessly to deliver exceptional results." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, i) => (
@@ -134,7 +134,7 @@ export function AboutPage() {
 
       {/* Values */}
       <section className="py-24 bg-white dark:bg-[#0F172A]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading badge="Our Values" title="What We Stand For" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => {
@@ -156,7 +156,7 @@ export function AboutPage() {
 
       {/* Office Gallery */}
       <section className="py-24 bg-slate-50 dark:bg-[#0A0F1E]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading badge="Our Space" title="Where the Magic Happens" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[

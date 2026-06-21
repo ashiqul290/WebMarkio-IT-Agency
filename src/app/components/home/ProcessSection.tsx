@@ -43,7 +43,7 @@ const steps = [
 export function ProcessSection() {
   return (
     <section className="py-24 bg-[#0F172A] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Our Process"
           title="How We Turn Vision Into Reality"

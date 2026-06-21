@@ -38,7 +38,7 @@ const reasons = [
 export function WhyChooseUs() {
   return (
     <section className="py-24 bg-slate-50 dark:bg-[#0A0F1E]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <motion.div

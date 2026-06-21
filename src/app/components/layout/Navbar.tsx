@@ -81,7 +81,7 @@ export function Navbar() {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-18">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2.5 shrink-0">
@@ -205,7 +205,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="fixed top-16 left-0 right-0 z-40 bg-white dark:bg-[#0A0F1E] border-b border-black/8 dark:border-white/8 overflow-y-auto max-h-[calc(100vh-4rem)] shadow-xl"
           >
-            <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
+            <div className="max-w-[1400px] mx-auto px-4 py-4 space-y-1">
               {navLinks.map((link) => (
                 <div key={link.label}>
                   {link.hasMega ? (

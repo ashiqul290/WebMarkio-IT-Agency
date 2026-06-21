@@ -11,7 +11,7 @@ const stats = [
 export function StatsSection() {
   return (
     <section className="py-20 bg-white dark:bg-[#0F172A] border-y border-slate-100 dark:border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat, i) => (
             <motion.div
