@@ -53,7 +53,7 @@ export function Footer() {
   return (
     <footer className="bg-[#0F172A] text-slate-300">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -167,7 +167,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">
             © {new Date().getFullYear()} WebMarkio Agency. All rights reserved.
           </p>
