@@ -5,7 +5,7 @@ export function RefundPolicyPage() {
   return (
     <PageTransition>
       <section className="pt-32 pb-20 bg-[#0F172A]">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-5xl font-bold text-white [font-family:'Plus_Jakarta_Sans',sans-serif] mb-4">Refund Policy</h1>
             <p className="text-slate-400">Last updated: June 18, 2025</p>

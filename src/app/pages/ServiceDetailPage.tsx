@@ -24,7 +24,7 @@ export function ServiceDetailPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-[#0F172A] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(37,99,235,0.12)_0%,transparent_60%)]" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <Link to="/services" className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to Services
           </Link>
@@ -54,7 +54,7 @@ export function ServiceDetailPage() {
 
       {/* Content */}
       <section className="py-24 bg-white dark:bg-[#0F172A]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main */}
             <div className="lg:col-span-2 space-y-12">
