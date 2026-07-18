@@ -28,7 +28,7 @@ export function CTASection() {
             <span className="bg-gradient-to-r from-[#2563EB] to-[#22C55E] bg-clip-text text-transparent"> Extraordinary</span>
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Join 200+ companies that trusted WebMarkio to transform their digital presence. Your free consultation call is 45 minutes with our senior strategist—no sales pitch, just strategy.
+            Join 200+ companies that trusted WebMarkio to transform their digital presence. Your free consultation call is 45 minutes with our senior strategist no sales pitch, just strategy.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
