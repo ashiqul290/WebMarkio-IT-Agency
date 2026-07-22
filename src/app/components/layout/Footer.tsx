@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Globe, Mail, Phone, MapPin, Twitter, Linkedin, Instagram, Youtube, ArrowRight } from "lucide-react";
+import { Globe, Mail, Phone, MapPin, Twitter, Linkedin, Instagram, Youtube, ArrowRight, Facebook } from "lucide-react";
 import { useState } from "react";
 import logoLight from "../../assets/logo.png";
 
@@ -32,10 +32,10 @@ const footerLinks = {
 };
 
 const socials = [
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Facebook, href: "https://www.facebook.com/webmarkio", label: "Facebook" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/webmarkio", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@webmarkio", label: "YouTube" },
 ];
 
 export function Footer() {
