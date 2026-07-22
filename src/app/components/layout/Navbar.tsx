@@ -36,7 +36,10 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window === "undefined") return true;
+    return localStorage.getItem("theme") !== "light";
+  });
   const location = useLocation();
   const megaRef = useRef<HTMLDivElement>(null);
 
@@ -44,9 +47,14 @@ export function Navbar() {
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
-    if (saved === "dark") {
+
+    if (saved === "light") {
+      setDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
       setDarkMode(true);
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 
