@@ -10,11 +10,13 @@ import { PricingPreview } from "../components/home/PricingPreview";
 import { FAQSection } from "../components/home/FAQSection";
 import { CTASection } from "../components/home/CTASection";
 import { PageTransition } from "../components/shared/PageTransition";
+import Banner from "../components/home/Banner";
 
 export function HomePage() {
   return (
     <PageTransition>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <Banner />
       <StatsSection />
       <TrustedCompanies />
       <ServicesSection />

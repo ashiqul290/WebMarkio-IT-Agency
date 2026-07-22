@@ -75,8 +75,8 @@ export function Navbar() {
     : "bg-white/95 dark:bg-[#0A0F1E]/95 backdrop-blur-xl shadow-sm border-b border-black/5 dark:border-white/5";
 
   const textColor = isScrolled || !isHeroPage
-    ? "text-[#1E293B] dark:text-slate-100"
-    : "text-white";
+    ? "text-black dark:text-slate-100"
+    : "text-white ";
 
   return (
     <>
@@ -99,8 +99,8 @@ export function Navbar() {
                       onMouseEnter={() => setMegaOpen(true)}
                       onMouseLeave={() => setMegaOpen(false)}
                       onClick={() => setMegaOpen(v => !v)}
-                      className={`flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors hover:text-[#2563EB] ${
-                        location.pathname.startsWith("/services") ? "text-[#2563EB]" : textColor
+                      className={`flex items-center gap-1 px-3  py-2 rounded-md text-sm font-medium transition-colors hover:text-[#2563EB] ${
+                        location.pathname.startsWith("/services") ? "text-[#2563EB] " : textColor
                       }`}
                     >
                       {link.label}
@@ -176,7 +176,7 @@ export function Navbar() {
                 className={`hidden sm:flex w-9 h-9 items-center justify-center rounded-full transition-colors hover:bg-white/10 dark:hover:bg-white/10 ${textColor}`}
                 aria-label="Toggle dark mode"
               >
-                {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-black" />}
               </button>
               <Link
                 to="/contact"
@@ -247,6 +247,7 @@ export function Navbar() {
                   Get Free Consultation
                 </Link>
               </div>
+
               <button
                 onClick={toggleDark}
                 className="flex items-center gap-2 w-full px-3 py-2.5 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
